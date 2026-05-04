@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Workspace created when the skill runs in this dir (don't ship transcripts/cache).
+.research-yt/
+
+# Old workspace location (pre-rename). Keep ignored so accidental old runs don't get committed.
+research-yt-kb/
