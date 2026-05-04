@@ -36,6 +36,14 @@ npx skills add TimBroddin/skills --skill research-yt
 
 ## Skills
 
+### [app-store-aso](skills/app-store-aso/)
+
+Generate optimized Apple App Store metadata with ASO best practices, character-limit validation, competitive analysis, and screenshot strategy. Activates on App Store optimization, metadata review, or screenshot questions.
+
+Pairs well with [astro-mcp-server](https://github.com/TimBroddin/astro-mcp-server) (full ASO MCP) and [krankie](https://github.com/timbroddin/krankie) (lightweight CLI for keyword rank tracking).
+
+Includes a `validate_metadata.py` script that checks Apple's character limits independently of the agent.
+
 ### [research-yt](skills/research-yt/)
 
 Deep LLM-driven research over one or more YouTube channels' videos. Lists each channel's catalog, filters videos by topic relevance, transcribes only the relevant ones, then synthesizes a single cross-channel research document with timestamped citations.
