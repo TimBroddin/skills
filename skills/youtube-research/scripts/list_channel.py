@@ -185,7 +185,7 @@ def main() -> int:
     p = argparse.ArgumentParser(description="List one or more channels' videos with descriptions for LLM filtering.")
     p.add_argument("--channel", required=True, action="append",
                    help="Channel handle, URL, or @name. Repeat for multiple channels, or pass comma-separated.")
-    p.add_argument("--kb", required=True, help="KB root (./research-yt-kb)")
+    p.add_argument("--kb", required=True, help="KB root (./.youtube-research)")
     p.add_argument("--limit", type=int, default=50, help="Max videos per channel (newest first)")
     p.add_argument("--refresh", action="store_true", help="Ignore cached index and refetch all metadata")
     p.add_argument("--max-desc", type=int, default=600,

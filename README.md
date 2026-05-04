@@ -23,7 +23,7 @@ npx skills add TimBroddin/skills --list
 Install one skill:
 
 ```bash
-npx skills add TimBroddin/skills --skill research-yt
+npx skills add TimBroddin/skills --skill youtube-research
 ```
 
 ### Option B — Claude Code plugin (Claude Code only)
@@ -46,11 +46,11 @@ Pairs well with [astro-mcp-server](https://github.com/TimBroddin/astro-mcp-serve
 
 Includes a `validate_metadata.py` script that checks Apple's character limits independently of the agent.
 
-### [research-yt](skills/research-yt/)
+### [youtube-research](skills/youtube-research/)
 
 Deep LLM-driven research over one or more YouTube channels' videos. Lists each channel's catalog, filters videos by topic relevance, transcribes only the relevant ones, then synthesizes a single cross-channel research document with timestamped citations.
 
-Subtitles-first via `yt-dlp`, with optional Whisper fallback. Workspace at `./.research-yt/`; final artifact in cwd.
+Subtitles-first via `yt-dlp`, with optional Whisper fallback. Workspace at `./.youtube-research/`; final artifact in cwd.
 
 Requires: `yt-dlp`, `ffmpeg` (`brew install yt-dlp ffmpeg`). Whisper optional.
 

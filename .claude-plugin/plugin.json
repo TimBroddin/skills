@@ -2,6 +2,6 @@
   "name": "timbroddin-skills",
   "skills": [
     "./skills/app-store-aso",
-    "./skills/research-yt"
+    "./skills/youtube-research"
   ]
 }

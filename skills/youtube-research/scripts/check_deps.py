@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check dependencies for the research-yt skill.
+"""Check dependencies for the youtube-research skill.
 
 Verifies yt-dlp is present and detects which Whisper flavor is available.
 Prints a JSON report on stdout. Exits 0 if yt-dlp is found (the only hard

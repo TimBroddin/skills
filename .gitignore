@@ -3,7 +3,8 @@ __pycache__/
 *.pyc
 
 # Workspace created when the skill runs in this dir (don't ship transcripts/cache).
-.research-yt/
+.youtube-research/
 
-# Old workspace location (pre-rename). Keep ignored so accidental old runs don't get committed.
+# Old workspace locations (pre-rename). Keep ignored so accidental old runs don't get committed.
+.research-yt/
 research-yt-kb/

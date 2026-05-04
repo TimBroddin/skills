@@ -277,11 +277,11 @@ def process_video(video_url: str, channel_dir: Path, whisper: dict | None,
 # ---------- main ----------
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="Fetch YouTube transcripts into the research-yt KB.")
+    p = argparse.ArgumentParser(description="Fetch YouTube transcripts into the youtube-research KB.")
     p.add_argument("--channel", help="Channel handle, URL, or @name (fetches newest --limit videos)")
     p.add_argument("--video", help="Single video URL or ID")
     p.add_argument("--ids", help="Comma-separated video IDs (LLM-filtered set). Requires --channel for slug.")
-    p.add_argument("--kb", required=True, help="Path to KB root (./research-yt-kb)")
+    p.add_argument("--kb", required=True, help="Path to KB root (./.youtube-research)")
     p.add_argument("--limit", type=int, default=50, help="Max videos when fetching a channel")
     p.add_argument("--force-whisper", action="store_true", help="Skip subs; transcribe with Whisper")
     args = p.parse_args()
