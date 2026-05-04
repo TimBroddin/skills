@@ -4,17 +4,9 @@ Personal collection of agent skills, installable via the [skills](https://skills
 
 ## Install
 
-### Option A — Claude Code plugin (Claude Code only)
+### Option A — `skills` CLI (recommended; works with any agent)
 
-Installs the whole repo as a single plugin. All skills get registered at once.
-
-```
-/plugin install TimBroddin/skills
-```
-
-The plugin manifest lives at [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) — adding a new skill is one line there.
-
-### Option B — `skills` CLI (any agent: Claude Code, Codex, Cursor, OpenCode, …)
+Cross-agent install via [skills.sh](https://skills.sh) — Claude Code, Codex, Cursor, OpenCode, and more.
 
 Install all skills globally:
 
@@ -33,6 +25,16 @@ Install one skill:
 ```bash
 npx skills add TimBroddin/skills --skill research-yt
 ```
+
+### Option B — Claude Code plugin (Claude Code only)
+
+Installs the whole repo as a single plugin. All skills get registered at once.
+
+```
+/plugin install TimBroddin/skills
+```
+
+The plugin manifest lives at [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) — adding a new skill is one line there.
 
 ## Skills
 
