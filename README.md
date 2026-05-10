@@ -46,6 +46,12 @@ Pairs well with [astro-mcp-server](https://github.com/TimBroddin/astro-mcp-serve
 
 Includes a `validate_metadata.py` script that checks Apple's character limits independently of the agent.
 
+### [swift-missing-translations](skills/swift-missing-translations/)
+
+Audit a Swift/SwiftUI project's `Localizable.xcstrings` (and `AppShortcuts.xcstrings`) for missing translations, compute per-language coverage, find raw source-language literals still hard-coded in UI code, and bulk-translate the gaps.
+
+Reads the catalog's `sourceLanguage` and target locales from the project — works regardless of source language. Covers the trickier patterns the catalog alone can't fix: `LocalizedStringKey` vs `String`-typed surfaces, `{name}`-placeholder keys imported from JS i18n libraries, the `Hashable`-on-`LocalizedStringResource` compile error, the `String(localized:)` vs in-app-language-picker pitfall (with a `LocaleBundle` helper), and the `AppShortcuts.xcstrings` + `AppEnum`-for-Int-in-phrases setup for App Intents.
+
 ### [youtube-research](skills/youtube-research/)
 
 Deep LLM-driven research over one or more YouTube channels' videos. Lists each channel's catalog, filters videos by topic relevance, transcribes only the relevant ones, then synthesizes a single cross-channel research document with timestamped citations.

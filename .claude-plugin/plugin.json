@@ -2,6 +2,7 @@
   "name": "timbroddin-skills",
   "skills": [
     "./skills/app-store-aso",
+    "./skills/swift-missing-translations",
     "./skills/youtube-research"
   ]
 }
